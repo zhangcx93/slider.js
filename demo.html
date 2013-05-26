@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/slider.js" ></script>
+<title>Test</title>
+</head>
+<body>
+	<script>
+		// new Slider({
+		// 	option:{
+		// 		type:"simple",//
+		// 		domID:"slider",
+		// 		showCapital:"",
+
+
+		// 	},
+		// 	sliders:[
+		// 		{
+		// 			img:"/img/01.jpg",
+		// 			capital:"This is a capital for it!",
+		// 			url:"/",
+		// 			title:"haha",
+		// 		}
+		// 	]
+		// })
+	</script>
+	<div id="slider">
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/02.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/02.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/02.jpg" alt="" title="The Title"></a></li>
+	</div>
+  	<div id="another-slider">
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+		<li><a href=""><img src="./img/01.jpg" alt="" title="The Title"></a></li>
+	</div> 
+	<script>
+		var a = new Slider('slider',{
+			autoScroll: false,
+			// slideInterval: 1000,
+			// showPaginator: false,
+			// showArrow: false,
+		});
+		var b = new Slider('another-slider');
+	</script>
+</body>
+</html>

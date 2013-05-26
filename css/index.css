@@ -1,0 +1,36 @@
+#slider{
+	width:400px;
+	height:250px;
+	position: relative;
+	overflow: hidden;
+	border:10px solid gray;
+}
+.rightArrow{
+	position: absolute;
+	right:20px;
+	top:140px;
+}
+.leftArrow{
+	position: absolute;
+	left:20px;
+	top:140px;
+}
+.paginators li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.paginators{
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+.active{
+	color:red;
+}
+#another-slider{
+	width:500px;
+	height:300px;
+	position: relative;
+	overflow: hidden;
+	border:10px solid gray;
+}
