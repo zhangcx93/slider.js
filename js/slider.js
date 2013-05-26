@@ -15,7 +15,9 @@ var
 		effect: "stack",
 		onChangeCallback: function(){},
 	},
+
 	div = document.createElement("div"),
+
 	transition = div.style.transition == "" ? "transition" : (div.style.webkitTransition == ""? "webkitTransition" : (div.style.mozTransition =="" ? "mozTransition": (div.style.oTransition == "" ? "oTransition" : null))),
 	Slider = function(domId, sliders, option){
 		this.init(domId, sliders, option);
@@ -127,6 +129,7 @@ Slider.fn = Slider.prototype = {
 				page.style.position = 'absolute';
 				page.style.textAlign = 'center';
 				page.style[transition] = 'left '+ option['time'] +'ms';
+				page.style.left = "0px";
 				var imgWrap = div.cloneNode();
 				imgWrap.className = "image-wrap";
 				imgWrap.style.display = 'table-cell';
